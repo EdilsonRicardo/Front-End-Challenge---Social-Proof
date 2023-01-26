@@ -1,35 +1,34 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;800&display=swap');
 
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
+body {
     font-family: 'League Spartan', sans-serif;
-    font-size: 1em;
+    /* font-size: 1em; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
-.Container{
+.Container {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
 }
 
-.Flex{
+.Flex {
     display: flex;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .attribution {
@@ -37,68 +36,101 @@ body{
     text-align: center;
 }
 
-h2{
+h2 {
     color: hsl(300, 43%, 22%);
     max-width: 200px;
+    font-size: 32px;
 }
 
-.ratingContainer{
+.ratingContainer {
     background-color: grey;
     border-radius: 7px;
     display: flex;
+}
+
+.containerProfiles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
+#profileImg {
+    border-radius: 50px;
+    max-width: 65px;
+}
+
+.containerRoxo {
+    background-color: violet;
+    border-radius: 10px;
+    padding: 20px;
+    /* width: 250px; */
+    /* max-height: 150px; */
+}
+
+.flexNomeImagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 
 /* SMARTHONE ----------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media(min-width: 375px){
-    .Container{
+@media(min-width: 375px) {
+    .Container {
         max-width: 330px;
+        margin-top: 40px;
+
     }
 
-    .Flex{
+    .Flex {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
     }
-    .Flex2{
+
+    .Flex2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: white;
     }
-    .ratingContainer{
+
+    .ratingContainer {
         display: flex;
         flex-direction: column;
-        padding: 15px 50px;
+        padding: 15px 60px;
         margin: 5px;
         justify-content: center;
         align-items: center;
     }
 
+    .containerProfiles {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
 /* PC ----------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media(min-width: 1200px){
-    .Container{
+@media(min-width: 1200px) {
+    .Container {
         max-width: 1140px;
     }
-    
-    .Flex{
+
+    .Flex {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: unset;
         text-align: unset;
-        
+
     }
 
-    .Flex2{
+    .Flex2 {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -106,11 +138,16 @@ h2{
         justify-content: space-between;
     }
 
-    #paragrafo1{
+    #paragrafo1 {
         max-width: 400px;
     }
 
-    .ratingContainer{
+    .ratingContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerProfiles {
         display: flex;
         flex-direction: row;
     }
