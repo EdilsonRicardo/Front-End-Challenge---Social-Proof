@@ -145,7 +145,7 @@ h2 {
     .ratingContainer {
         display: flex;
         flex-direction: column;
-        padding: 15px 55px;
+        padding: 20px 45px;
         margin: 5px;
         justify-content: center;
         align-items: center;
@@ -217,6 +217,7 @@ h2 {
 
     #rate2 {
         margin-left: 70px;
+
     }
 
     #rate3 {
