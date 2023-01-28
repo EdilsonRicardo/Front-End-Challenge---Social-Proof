@@ -35,25 +35,27 @@ body {
     font-size: 11px;
     text-align: center;
     margin-top: 10px;
-    
+
 }
 
-.flexRating{
+.flexRating {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 h2 {
     color: hsl(300, 43%, 22%);
     max-width: 200px;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .ratingContainer {
-    background-color: grey;
+    background-color: hsl(300, 33%, 94%);
     border-radius: 7px;
     display: flex;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
 }
 
 .containerProfiles {
@@ -68,14 +70,15 @@ h2 {
 
 #profileImg {
     border-radius: 50px;
-    max-width: 65px;
+    max-width: 40px;
 }
 
 .containerRoxo {
-    background-color: violet;
+    background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
-    padding: 20px 10px;
-    width: 250px; 
+    padding: 25px 15px;
+    width: 280px;
+
     /* max-height: 150px; */
 }
 
@@ -85,6 +88,33 @@ h2 {
     align-items: center;
 }
 
+#paragrafo1 {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.nomeFlex{
+    margin-left: 15px;
+}
+
+#review{
+    color: #fff; 
+    line-height: 15px; 
+    margin-top: 10px;
+    font-size: 13px;  
+}
+
+#nome{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+#categoria{
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    
+}
 
 /* SMARTHONE ----------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media(min-width: 375px) {
@@ -93,9 +123,8 @@ h2 {
         margin-top: 40px;
 
     }
-    .flexRating{
-        
-    }
+
+    .flexRating {}
 
     .Flex {
         flex-direction: column;
@@ -108,21 +137,37 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         /* background-color: white; */
+        /* max-height: 800px; */
     }
 
     .ratingContainer {
         display: flex;
         flex-direction: column;
-        padding: 15px 60px;
+        padding: 15px 55px;
         margin: 5px;
         justify-content: center;
         align-items: center;
     }
 
+    #paragrafoRating {
+        margin-top: 7px;
+    }
+
+    #paragrafo1 {
+
+        max-width: 300px;
+    }
+
     .containerProfiles {
         display: flex;
         flex-direction: column;
+    }
+
+    .containerRoxo {
+        margin: 3px 0px;
+        padding: 19px;
     }
 }
 
@@ -138,7 +183,6 @@ h2 {
         justify-content: space-evenly;
         align-items: unset;
         text-align: unset;
-
     }
 
     .Flex2 {
@@ -147,31 +191,54 @@ h2 {
         align-items: center;
         /* background-color: white; */
         justify-content: space-between;
-        width: 1000px;
+        /* max-width: 1000px; */
     }
 
     #paragrafo1 {
         max-width: 400px;
+        /* line-height: 5px; */
     }
 
     .ratingContainer {
         display: flex;
         flex-direction: row;
+        width: 330px;
     }
 
     .containerProfiles {
         display: flex;
         flex-direction: row;
+        margin-top: 20px;
     }
 
-    .flexRating{
+    .flexRating {
         align-items: baseline;
     }
 
-    /*#rate2{
-        margin-left: 50px;
+    #rate2 {
+        margin-left: 70px;
     }
-    #rate3{
-        margin-left: 100px;
-    }*/
+
+    #rate3 {
+        margin-left: 140px;
+    }
+
+    #paragrafoRating{
+        margin-left: 15px;
+    }
+
+    .containerRoxo{
+        height: 100px;
+        padding: 25px;
+    }
+    .wholeRating{
+        margin-left: 30px;
+    }
+
+    #paraBaixo1{
+        margin-top: 25px;
+    }
+    #paraBaixo2{
+        margin-top: 45px;
+    }
 }
